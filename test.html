@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        var redirectToApp = function() {
+            setTimeout(function appNotInstalled() {
+                window.location.replace("http://vg.no");
+            }, 100);
+            window.location.replace("twitter://xxx-yyy");
+        };
+        //window.onload = redirectToApp;
+    </script>
+</head>
+<body>
+    <button onclick="redirectToApp()">Knapp</button>
+    <a href="vipps-idme-test://session.id">Vipps Test</a>
+    <a href="vipps-idme://session.id">Vipps</a>
+    <a href="twitter://session.id">Twitter</a>
+</body>
+</html>
